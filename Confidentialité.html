@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Açık arka plan rengi */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Yazı rengi */
+            font-family: 'Roboto', Arial, sans-serif; /* Benzer bir yazı tipi kullan */
+        }
+        header {
+            background-color: #ffffff; /* Beyaz arka plan */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* Ayarlanmış yazı boyutu */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* Mavi renk */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* Mavi kenarlık */
+            padding: 3px 6px; /* Azaltılmış iç boşluk */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .conditions-button {
+            color: #007BFF; /* Mavi renk */
+            font-size: 0.9em; /* Azaltılmış yazı boyutu */
+            padding: 3px 6px; /* Azaltılmış iç boşluk */
+            border: 1px solid #007BFF; /* Mavi kenarlık */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Şeffaf arka plan */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* Mavi ayırıcı */
+            width: 100%;
+            margin-top: 0; /* Üst boşluğu kaldır */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* Yazı rengi */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .content {
+            padding: 10px 20px; /* Üst iç boşluk azaltıldı */
+            font-size: 0.85em;
+        }
+        .content h2 {
+            font-size: 1.2em; /* Başlıklar için azaltılmış boyut */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* Yazı rengi */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="conditions-button">Gizlilik</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">Gizlilik Politikası</div>
+<div class="divider"></div>
+
+<div class="content">
+    <p><strong>Son güncelleme: 31/01/2024.</strong></p>
+    <p>GZ'ye hoş geldiniz, küresel demografik istatistikler üreten bir web uygulaması. Gizliliğinizi saygı gösteriyor ve koruyoruz. Bu gizlilik politikası, topladığımız bilgi türlerini, nasıl kullandığımızı, nasıl koruduğumuzu ve kullanıcı olarak haklarınızı açıklamaktadır.</p>
+
+    <h2>1. Toplanan Bilgiler</h2>
+    <p><strong>a) Gönüllü olarak sağlanan bilgiler</strong></p>
+    <p>Uygulamamızı kullanırken, gönüllü olarak aşağıdaki bilgileri sağlayabilirsiniz:</p>
+    <ul>
+        <li>Doğum tarihi</li>
+        <li>Doğum ülkesi</li>
+        <li>Cinsiyet</li>
+    </ul>
+    
+    <p><strong>b) Otomatik toplama yok</strong></p>
+    <p>Cookies veya tarayıcı bilgileri gibi verileri otomatik olarak toplamıyoruz.</p>
+
+    <h2>2. Bilgilerin Kullanımı</h2>
+    <p>Sağladığınız bilgileri yalnızca aşağıdaki amaçlar için kullanıyoruz:</p>
+    <ul>
+        <li>Doğumlarla ilgili anonim istatistiklerin analiz edilmesi ve üretilmesi (gün, ay, yıl, ülke, cinsiyet, yaş vb. göre).</li>
+        <li>Eğitim ve tarihsel amaçlar için demografik eğilimlerin belirlenmesi.</li>
+    </ul>
+    <p>Verileriniz asla pazarlama, reklam veya diğer amaçlar için kullanılmayacaktır.</p>
+
+    <h2>3. Bilgilerin Paylaşılması</h2>
+    <p>Aşağıdaki kesinlikle gerekli durumlar dışında, bilgilerinizi üçüncü taraflarla paylaşmıyoruz:</p>
+    <ul>
+        <li><strong>Hizmet sağlayıcılar:</strong> Verilerinizi barındırmak için Google Cloud (Firebase) kullanıyoruz ve bağış yönetimi için PayPal kullanıyoruz. Bu ortaklar da sıkı gizlilik standartlarına uymayı taahhüt ediyorlar.</li>
+        <li><strong>Hukuksal uyum:</strong> Eğer yasalar gerektiriyorsa, hukuki yükümlülükleri yerine getirmek için verilerinizi açıklamak zorunda kalabiliriz.</li>
+    </ul>
+    <p>Bu durumlar dışında, verileriniz kimseye satılmayacak, kiralanmayacak veya paylaşılmayacaktır.</p>
+
+    <h2>4. Veri Saklama ve Güvenlik</h2>
+    <p>Verileriniz, aşağıdakiler de dahil olmak üzere sıkı önlemlerle korunmaktadır:</p>
+    <ul>
+        <li><strong>Şifreleme:</strong> Cihazınız ile sunucularımız arasındaki tüm iletişim SSL/TLS protokolleri üzerinden korunmaktadır.</li>
+        <li><strong>Güvenli barındırma:</strong> Verileriniz, Amerika Birleşik Devletleri'nde bulunan Google Cloud'un güvenli sunucularında saklanmakta olup, uluslararası veri koruma standartlarına uymaktadır.</li>
+    </ul>
+    <p>Ayrıca, şunları da garanti ediyoruz:</p>
+    <ul>
+        <li>Sunulan veriler hemen toplanıp anonimleştirilir.</li>
+        <li>Hiçbir bilgi bireysel bir kullanıcıya izlenemez.</li>
+    </ul>
+
+    <h2>5. Veri Silme</h2>
+    <p>Verileriniz üzerinde tam kontrol hakkına sahipsiniz:</p>
+    <ul>
+        <li>Gönderimden sonra, aktif oturumdayken verilerinizi herhangi bir zamanda silmenizi sağlayan bir sıfırlama simgesi görüntülenir.</li>
+        <li>Oturumunuz kapandığında veya süresi dolduğunda, verileriniz geri alınamaz şekilde anonimleştirilir ve silinemez.</li>
+    </ul>
+    <p>Bu toplanan verileri uzun vadeli araştırma ve analiz için saklıyoruz. Ancak, büyük bir sorun meydana geldiğinde veya talebiniz üzerine, topladığımız tüm verileri silme taahhüdünde bulunuyoruz.</p>
+
+    <h2>6. Çerezler ve Benzeri Teknolojiler</h2>
+    <p>Çerezler veya izleme teknolojileri kullanmıyoruz.</p>
+
+    <h2>7. Uluslararası Veri Transferi</h2>
+    <p>Verileriniz Amerika Birleşik Devletleri'ne transfer edilebilir ve burada saklanabilir; sunucularımız burada bulunmaktadır. Tüm verilerin uluslararası veri koruma yasalarına uygun olarak işleneceğini ve aynı güvenlik seviyelerinin sağlanacağını garanti ediyoruz.</p>
+
+    <h2>8. Saklama Süresi</h2>
+    <p>Anonim verileri gelecekteki demografik analizler için yararlı olması amacıyla süresiz olarak saklıyoruz. Ancak, herhangi bir tanımlanabilir veri, kullanıcının aktif oturumunu aşmayacaktır.</p>
+
+    <h2>9. Bu Politikanın Değişiklikleri</h2>
+    <p>Uygulamalarımızdaki veya yürürlükteki yasalardaki değişiklikleri yansıtmak için bu gizlilik politikasını güncelleyebiliriz. Önemli değişiklikler uygulamamız veya e-posta aracılığıyla bildirilecektir.</p>
+
+    <h2>10. İletişim</h2>
+    <p>Bu gizlilik politikası ile ilgili herhangi bir soru veya endişeniz varsa, bizimle iletişime geçebilirsiniz:</p>
+    <p>E-posta: admin@g-z.online</p>
+</div>
+
+<footer>
+    <p>©️ 2025 <span translate="no">GZ</span></p>
+</footer>
+
+</body>
+</html>
