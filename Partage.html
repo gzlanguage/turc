@@ -10,7 +10,7 @@
         body {
             background-color: #f5f5f5; /* Açık arka plan rengi */
             color: var(--text-color);
-            font-family: 'Roboto', Arial, sans-serif; /* Benzer bir yazı tipi kullan */
+            font-family: 'Roboto', Arial, sans-serif; /* Benzer bir font kullan */
             padding: 20px;
             margin: 0;
         }
@@ -25,9 +25,9 @@
             font-family: 'Billabong', cursive;
             color: #007BFF; /* Mavi renk */
             border: 1.5px solid #007BFF; /* Mavi kenar */
-            padding: 5px 10px;
+            padding: 4px;
             display: inline-block;
-            border-radius: 10px; /* Yuvarlak kenarlar */
+            border-radius: 12px; /* Yuvarlak kenarlar */
         }
         .divider {
             height: 1px;
@@ -55,7 +55,7 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 15px; /* İkonlar arası boşluk */
+            gap: 15px; /* İkonlar arasındaki boşluk */
             margin-top: 20px;
         }
         .icon {
@@ -63,7 +63,7 @@
             color: #007BFF; /* Mavi renk */
             transition: color 0.3s;
             border: 1px solid #007BFF; /* Mavi kenar */
-            border-radius: 3px;
+            border-radius: 10px;
             padding: 8px; 
             background-color: rgba(0, 119, 190, 0.1); /* Açık arka plan */
             display: inline-block;
@@ -95,9 +95,10 @@
         }
         .copy-button {
             margin-top: 10px;
-            padding: 10px 20px;
+            padding: 10px 17px;
             border: 1px solid #007BFF; /* Mavi kenar */
-            background-color: transparent;
+            border-radius: 13px;
+            background-color: rgba(0, 119, 190, 0.1); /* Açık arka plan */
             color: #007BFF; /* Mavi renk */
             cursor: pointer;
             font-size: 16px;
@@ -111,12 +112,7 @@
             margin-top: 10px;
             color: #007BFF; /* Mavi renk */
         }
-        .copyright {
-            margin-top: 40px;
-            color: darkgray;
-            font-size: 0.8em;
-            text-align: center;
-        }
+        
     </style>
 </head>
 <body>
@@ -129,18 +125,18 @@
     <div class="divider"></div>
 
     <div class="content">
-        <h1>GZ'yi Paylaş</h1>
+        <h1>G-Z'yi Paylaşın</h1>
         <div class="short-divider"></div>
-        <p class="social-message">Kim olduğumuzu ve dünyaya nasıl ait olduğumuzu keşfedelim! Eğlencenin yanı sıra, nesillerimiz hakkında daha fazla bilgi edinelim:</p>
+        <p class="social-message">Kim olduğumuzu ve dünyaya nasıl ait olduğumuzu keşfedelim! Eğlencenin yanı sıra, nesillerimiz hakkında daha fazla şey öğrenelim:</p>
 
         <div class="social-icons">
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?text=G-Z%20'ye%20katılın%20!%20Birlikte,%20neseletimizin%20büyüleyici%20sırlarını%20keşfedelim,%20heyecan verici%20buluntularla%20ve%20eğlenceli%20anlarla%20birlikte.%20Bu%20eşsiz%20maceranın%20bir%20parçası%20olun!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+            <a href="https://api.whatsapp.com/send?text=G-Z'ye katılın! Birlikte, neslimizin ilginç sırlarını keşfedelim, heyecan verici keşifler ve eğlenceli anlar arasında. Bu eşsiz maceranın bir parçası olun! 🌟 https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=G-Z%20'ye%20katılın%20!%20Birlikte,%20neseletimizin%20büyüleyici%20sırlarını%20keşfedelim,%20heyecan verici%20buluntularla%20ve%20eğlenceli%20anlarla%20birlikte.%20Bu%20eşsiz%20maceranın%20bir%20parçası%20olun!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=G-Z'ye katılın! Birlikte, neslimizin ilginç sırlarını keşfedelim, heyecan verici keşifler ve eğlenceli anlar arasında. Bu eşsiz maceranın bir parçası olun! 🌟" target="_blank" class="icon" onclick="share('Telegram')">
                 <i class="fab fa-telegram"></i>
             </a>
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
@@ -152,28 +148,25 @@
         </div>
 
         <div class="or-divider">
-            <span style="color: #007BFF;">Ya da</span> <!-- Mavi renk -->
+            <span style="color: #007BFF;">Veya</span> <!-- Mavi renk -->
         </div>
 
-        <p class="copy-message">Paylaşım linkini kopyala:</p>
+        <p class="copy-message">Paylaşım linkini kopyalayın:</p>
         <button class="copy-button" onclick="copyLink()">Kopyala</button>
         <p class="copy-status" id="copyStatus"></p>
     </div>
 
-    <div class="copyright">
-        &copy; 2025 <span translate="no">G-Z</span>. Tüm hakları saklıdır.
-    </div>
-
+    
     <script>
-        const shareText = "G-Z'ye katılın! Birlikte, nesletimizin büyüleyici sırlarını keşfedelim, heyecan verici buluntularla ve eğlenceli anlarla birlikte. Bu eşsiz maceranın bir parçası olun! 🌟";
+        const shareText = "G-Z'ye katılın! Birlikte, neslimizin ilginç sırlarını keşfedelim, heyecan verici keşifler ve eğlenceli anlar arasında. Bu eşsiz maceranın bir parçası olun! 🌟";
         const shareLink = "https://www.g-z.online";
 
         function copyLink() {
             navigator.clipboard.writeText(shareLink).then(() => {
-                document.getElementById("copyStatus").innerText = "Aşağıdaki paylaşım bağlantısı panonuza kopyalandı: " + shareLink;
+                document.getElementById("copyStatus").innerText = "Paylaşım linki panonuza kopyalandı: " + shareLink;
             }).catch(err => {
-                console.error("Metin kopyalama sırasında hata oluştu: ", err);
-                document.getElementById("copyStatus").innerText = "Metin kopyalama sırasında hata oluştu.";
+                console.error("Metni kopyalama hatası: ", err);
+                document.getElementById("copyStatus").innerText = "Metni kopyalarken hata oluştu.";
             });
         }
 
@@ -184,7 +177,7 @@
                     url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}&quote=${encodeURIComponent(shareText)}`;
                     break;
                 case 'WeChat':
-                    alert("WeChat'ta paylaşım genellikle uygulama üzerinden yapılır.");
+                    alert("WeChat üzerinden paylaşım genellikle uygulama aracılığıyla yapılır.");
                     return;
                 case 'Twitter':
                     url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
